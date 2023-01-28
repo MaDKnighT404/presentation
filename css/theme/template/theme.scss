@@ -53,7 +53,6 @@
 	font-weight: var(--r-heading-font-weight);
 	line-height: var(--r-heading-line-height);
 	letter-spacing: var(--r-heading-letter-spacing);
-
 	text-transform: var(--r-heading-text-transform);
 	text-shadow: var(--r-heading-text-shadow);
 
@@ -86,7 +85,7 @@
 .reveal h4:last-child,
 .reveal h5:last-child,
 .reveal h6:last-child {
-	margin-bottom: 0;
+	margin-bottom: 50px;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -212,13 +211,22 @@
 
 .reveal table th {
 	font-weight: bold;
+	background: rgb(33, 33, 93);
+}
+
+.reveal table td {
+	font-size: 1.9rem;
+}
+
+.reveal table tr {
+	font-size: 1.9rem;
 }
 
 .reveal table th,
 .reveal table td {
 	text-align: left;
 	padding: 0.2em 0.5em 0.2em 0.5em;
-	border-bottom: 1px solid;
+	border: 1px solid;
 }
 
 .reveal table th[align="center"],
@@ -229,11 +237,6 @@
 .reveal table th[align="right"],
 .reveal table td[align="right"] {
 	text-align: right;
-}
-
-.reveal table tbody tr:last-child th,
-.reveal table tbody tr:last-child td {
-	border-bottom: none;
 }
 
 .reveal sup {
